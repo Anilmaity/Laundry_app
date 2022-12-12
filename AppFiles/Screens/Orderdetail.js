@@ -400,18 +400,18 @@ const Orderdetail = ({ navigation, route }) => {
       <View
         style={{
 
-          width: "100%",
+          width: "101%",
           height: "12%",
           display: "flex",
+          alignSelf: "center",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          // position: "absolute",
           bottom: 0,
-          borderTopLeftRadius: 15,
-          borderTopEndRadius: 15,
-
-          elevation: 5,
+          borderTopLeftRadius: 20,
+          borderTopEndRadius: 20,
+          elevation: 2,
+          // backgroundColor: 'white'
         }}>
 
         <Pressable
