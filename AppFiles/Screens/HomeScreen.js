@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TextInput, ScrollView, FlatList, Image, Pressable, SafeAreaView } from "react-native";
 import React, { useEffect, useState } from "react";
 import { Icon } from "react-native-elements";
-
+import LaundaryCard from "./LaundaryCard";
 
 const HomeScreen = ({ navigation }) => {
 
@@ -18,328 +18,328 @@ const HomeScreen = ({ navigation }) => {
       quantity: 0,
     }
       ,
-      {
-        id: 1,
-        name: "Shirt",
-        image: require("../Assets/icons/shirt.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      },
-      {
-        id: 2,
-        name: "Sleeveless",
-        image: require("../Assets/icons/sleeveless.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      }, {
-        id: 3,
-        name: "Skirt",
-        image: require("../Assets/icons/skirt.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      }, {
-        id: 4,
-        name: "Polo",
-        image: require("../Assets/icons/polo.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      }, {
-        id: 5,
-        name: "Suit",
-        image: require("../Assets/icons/suit.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      },
-      {
-        id: 6,
-        name: "Jean",
-        image: require("../Assets/icons/jean.png"),
-        selected: false,
-        price: 5,
-        Gender: "Men",
-        quantity: 0,
-      }],
-
-
-  },
-    {
-      id: 0,
-      name: "Ironing",
-      selected: false,
-      cloths: [{
-        id: 0,
-        name: "T-Shirt",
-        image: require("../Assets/icons/t-shirt.png"),
-        selected: false,
-        price: 2,
-        Gender: "Men",
-        quantity: 0,
-      }
-        ,
-        {
-          id: 1,
-          name: "Shirt",
-          image: require("../Assets/icons/shirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 2,
-          name: "Sleeveless",
-          image: require("../Assets/icons/sleeveless.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 3,
-          name: "Skirt",
-          image: require("../Assets/icons/skirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 4,
-          name: "Polo",
-          image: require("../Assets/icons/polo.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 5,
-          name: "Suit",
-          image: require("../Assets/icons/suit.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 6,
-          name: "Jean",
-          image: require("../Assets/icons/jean.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }],
-    },
     {
       id: 1,
-      name: "Fold",
+      name: "Shirt",
+      image: require("../Assets/icons/shirt.png"),
       selected: false,
-      cloths: [{
-        id: 0,
-        name: "T-Shirt",
-        image: require("../Assets/icons/t-shirt.png"),
-        selected: false,
-        price: 2,
-        Gender: "Men",
-        quantity: 0,
-      }
-        ,
-        {
-          id: 1,
-          name: "Shirt",
-          image: require("../Assets/icons/shirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 2,
-          name: "Sleeveless",
-          image: require("../Assets/icons/sleeveless.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 3,
-          name: "Skirt",
-          image: require("../Assets/icons/skirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 4,
-          name: "Polo",
-          image: require("../Assets/icons/polo.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 5,
-          name: "Suit",
-          image: require("../Assets/icons/suit.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 6,
-          name: "Jean",
-          image: require("../Assets/icons/jean.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }],
-
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
     },
     {
       id: 2,
-      name: "Dry",
+      name: "Sleeveless",
+      image: require("../Assets/icons/sleeveless.png"),
       selected: false,
-
-      cloths: [{
-        id: 0,
-        name: "T-Shirt",
-        image: require("../Assets/icons/t-shirt.png"),
-        selected: false,
-        price: 2,
-        Gender: "Men",
-        quantity: 0,
-      }
-        ,
-        {
-          id: 1,
-          name: "Shirt",
-          image: require("../Assets/icons/shirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 2,
-          name: "Sleeveless",
-          image: require("../Assets/icons/sleeveless.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 3,
-          name: "Skirt",
-          image: require("../Assets/icons/skirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 4,
-          name: "Polo",
-          image: require("../Assets/icons/polo.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 5,
-          name: "Suit",
-          image: require("../Assets/icons/suit.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 6,
-          name: "Jean",
-          image: require("../Assets/icons/jean.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }],
-
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 3,
+      name: "Skirt",
+      image: require("../Assets/icons/skirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 4,
+      name: "Polo",
+      image: require("../Assets/icons/polo.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 5,
+      name: "Suit",
+      image: require("../Assets/icons/suit.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
     },
     {
-      id: 3,
-      name: "Clean",
+      id: 6,
+      name: "Jean",
+      image: require("../Assets/icons/jean.png"),
       selected: false,
-      cloths: [{
-        id: 0,
-        name: "T-Shirt",
-        image: require("../Assets/icons/t-shirt.png"),
-        selected: false,
-        price: 2,
-        Gender: "Men",
-        quantity: 0,
-      }
-        ,
-        {
-          id: 1,
-          name: "Shirt",
-          image: require("../Assets/icons/shirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 2,
-          name: "Sleeveless",
-          image: require("../Assets/icons/sleeveless.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 3,
-          name: "Skirt",
-          image: require("../Assets/icons/skirt.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 4,
-          name: "Polo",
-          image: require("../Assets/icons/polo.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }, {
-          id: 5,
-          name: "Suit",
-          image: require("../Assets/icons/suit.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        },
-        {
-          id: 6,
-          name: "Jean",
-          image: require("../Assets/icons/jean.png"),
-          selected: false,
-          price: 5,
-          Gender: "Men",
-          quantity: 0,
-        }],
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }],
 
+
+  },
+  {
+    id: 0,
+    name: "Ironing",
+    selected: false,
+    cloths: [{
+      id: 0,
+      name: "T-Shirt",
+      image: require("../Assets/icons/t-shirt.png"),
+      selected: false,
+      price: 2,
+      Gender: "Men",
+      quantity: 0,
+    }
+      ,
+    {
+      id: 1,
+      name: "Shirt",
+      image: require("../Assets/icons/shirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
     },
+    {
+      id: 2,
+      name: "Sleeveless",
+      image: require("../Assets/icons/sleeveless.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 3,
+      name: "Skirt",
+      image: require("../Assets/icons/skirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 4,
+      name: "Polo",
+      image: require("../Assets/icons/polo.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 5,
+      name: "Suit",
+      image: require("../Assets/icons/suit.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 6,
+      name: "Jean",
+      image: require("../Assets/icons/jean.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }],
+  },
+  {
+    id: 1,
+    name: "Fold",
+    selected: false,
+    cloths: [{
+      id: 0,
+      name: "T-Shirt",
+      image: require("../Assets/icons/t-shirt.png"),
+      selected: false,
+      price: 2,
+      Gender: "Men",
+      quantity: 0,
+    }
+      ,
+    {
+      id: 1,
+      name: "Shirt",
+      image: require("../Assets/icons/shirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 2,
+      name: "Sleeveless",
+      image: require("../Assets/icons/sleeveless.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 3,
+      name: "Skirt",
+      image: require("../Assets/icons/skirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 4,
+      name: "Polo",
+      image: require("../Assets/icons/polo.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 5,
+      name: "Suit",
+      image: require("../Assets/icons/suit.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 6,
+      name: "Jean",
+      image: require("../Assets/icons/jean.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }],
+
+  },
+  {
+    id: 2,
+    name: "Dry",
+    selected: false,
+
+    cloths: [{
+      id: 0,
+      name: "T-Shirt",
+      image: require("../Assets/icons/t-shirt.png"),
+      selected: false,
+      price: 2,
+      Gender: "Men",
+      quantity: 0,
+    }
+      ,
+    {
+      id: 1,
+      name: "Shirt",
+      image: require("../Assets/icons/shirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 2,
+      name: "Sleeveless",
+      image: require("../Assets/icons/sleeveless.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 3,
+      name: "Skirt",
+      image: require("../Assets/icons/skirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 4,
+      name: "Polo",
+      image: require("../Assets/icons/polo.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 5,
+      name: "Suit",
+      image: require("../Assets/icons/suit.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 6,
+      name: "Jean",
+      image: require("../Assets/icons/jean.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }],
+
+  },
+  {
+    id: 3,
+    name: "Clean",
+    selected: false,
+    cloths: [{
+      id: 0,
+      name: "T-Shirt",
+      image: require("../Assets/icons/t-shirt.png"),
+      selected: false,
+      price: 2,
+      Gender: "Men",
+      quantity: 0,
+    }
+      ,
+    {
+      id: 1,
+      name: "Shirt",
+      image: require("../Assets/icons/shirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 2,
+      name: "Sleeveless",
+      image: require("../Assets/icons/sleeveless.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 3,
+      name: "Skirt",
+      image: require("../Assets/icons/skirt.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 4,
+      name: "Polo",
+      image: require("../Assets/icons/polo.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }, {
+      id: 5,
+      name: "Suit",
+      image: require("../Assets/icons/suit.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    },
+    {
+      id: 6,
+      name: "Jean",
+      image: require("../Assets/icons/jean.png"),
+      selected: false,
+      price: 5,
+      Gender: "Men",
+      quantity: 0,
+    }],
+
+  },
 
 
   ]);
@@ -362,6 +362,99 @@ const HomeScreen = ({ navigation }) => {
     settotalquantity(totalquantity);
   };
 
+  const handleMinus = (item) => {
+    console.log(catagory.length);
+    let newcatagory = catagory.map((cat, index) => {
+      if (cat.selected) {
+        const newCloths = cat.cloths.map((cloth, index) => {
+          if (item.id === cloth.id) {
+            if (cloth.quantity > 0) {
+              cloth.quantity -= 1;
+            }
+            else {
+              cloth.quantity = 0;
+            }
+            return {
+              ...cloth,
+            };
+
+          } else {
+            return {
+              ...cloth,
+            };
+          }
+        });
+        return {
+          ...cat,
+          cloths: newCloths,
+        };
+      } else {
+        return {
+          ...cat,
+        };
+
+      }
+    });
+
+    setcatagory(newcatagory);
+    calculateTotal(newcatagory);
+  }
+
+
+  const handlePlus = (item) => {
+    console.log(catagory.length);
+    let newcatagory = catagory.map((cat, index) => {
+      if (cat.selected) {
+        const newCloths = cat.cloths.map((cloth, index) => {
+          if (item.id === cloth.id) {
+            return {
+              ...cloth,
+              quantity: cloth.quantity + 1,
+            };
+          } else {
+            return {
+              ...cloth,
+            };
+          }
+        });
+        return {
+          ...cat,
+          cloths: newCloths,
+        };
+      } else {
+        return {
+          ...cat,
+        };
+
+      }
+    });
+
+    setcatagory(newcatagory);
+    calculateTotal(newcatagory);
+  }
+
+
+  const handleGenderSelection = (item, gen) => {
+    console.log(item.Gender, gen)
+    let tempCategory = [...catagory].map((cat) => {
+      let cloths = cat.cloths.map((cloth) => {
+        if (cloth.id === item.id) {
+          console.log(cat.cloths)
+
+          return { ...cloth, Gender: gen };
+
+        }
+        else {
+          return { ...cloth };
+        }
+      })
+      return { ...cat, cloths: cloths };
+
+
+    })
+    // console.log(tempCategory)
+    setcatagory([...tempCategory])
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -459,314 +552,20 @@ const HomeScreen = ({ navigation }) => {
           {
             catagory[selected].cloths.map((item, index) => {
               return (
-                <View
-                  key={index}
-                  style={{
-                    padding: 2,
-                    borderRadius: 5,
-                    // borderWidth: 1,
-                    width: "100%",
-                    height: 80,
-                    backgroundColor: "#F9F9F9",
-                    marginHorizontal: 5,
-                    flexDirection: "row",
+                <LaundaryCard
+                  key={item.id}
+                  item={item}
+                  handleMinus={(item) => {
+                    handleMinus(item)
                   }}
-                >
-                  <Image
-                    source={item.image}
+                  handlePlus={(item) => {
+                    handlePlus(item)
+                  }}
+                  handleGenderSelection={(item, gen) => {
+                    handleGenderSelection(item, gen)
+                  }}
 
-                    style={{
-                      width: "10%",
-                      height: "100%",
-                      alignSelf: "center",
-                      justifyContent: "flex-start",
-                      resizeMode: "contain",
-                      marginHorizontal: 10,
-                    }}
-                  />
-                  <View
-                    style={{
-                      width: "40%",
-                      height: "100%",
-                      alignSelf: "center",
-                      justifyContent: "flex-start",
-                      marginHorizontal: 10,
-                    }}
-                  >
-
-                    <Text
-                      style={{
-                        height: "50%",
-                        width: "100%",
-                        fontWeight: "bold",
-                        fontSize: 15,
-                        textAlignVertical: "center",
-                        alignSelf: "flex-start",
-                        justifyContent: "center",
-                        color: "#38106A",
-                      }}
-                    >
-                      {item.name}
-                    </Text>
-                    <View
-                      style={{
-                        flexDirection: "row",
-                        justifyContent: "flex-start",
-                        width: "60%",
-                        height: "50%",
-                        // borderWidth: 1,
-                        shadowOpacity: 0.25,
-                        shadowRadius: 3.84,
-                      }}
-                    >
-                      <Text
-                        style={{
-                          fontSize: 12,
-                          height: "100%",
-                          width: "50%",
-                          color: "#CE1567",
-                        }}
-                      >
-                        {"$" + item.price}
-                      </Text>
-
-
-                      <View
-                      style={{
-                        flexDirection: "column",
-                        justifyContent: "flex-start",
-                        width: "100%",
-                        height: "80%",
-                        // borderWidth: 1,
-                        shadowOpacity: 0.25,
-                        shadowRadius: 3.84,
-                      }}
-                      >
-                        { true?
-                      <Pressable
-                        style={{
-                          fontSize: 12,
-                          height: "100%",
-                          width: "30%",
-                          color: "#38106A",
-                          display: "flex",
-                          flexDirection: "row",
-                          // borderWidth: 1,
-                        }}
-                        onPress={ () => {
-                          console.log("add");
-                        }}
-                      >
-                        <Text
-                          style={{
-                            fontSize: 12,
-                            height: "50%",
-                            width: "100%",
-                            color: "#38106A",
-                            marginTop: 3,
-                            // borderWidth: 1,
-                          }}
-                        >
-                        {item.Gender}
-                        </Text>
-                        <Icon name={"keyboard-arrow-down"} type="materialicons" color="black"
-                      />
-
-
-                      </Pressable>
-                      :
-
-                      <View
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          // borderWidth: 1,
-                        }}
-                      >
-                        <Pressable
-                          style={{
-                            fontSize: 12,
-                            height: "50%",
-                            width: "100%",
-                            color: "#38106A",
-                            // borderWidth: 1,
-                          }}
-                        >
-                          <Text
-                            style={{
-                              fontSize: 12,
-                              height: "100%",
-                              width: "100%",
-                              color: "#38106A",
-                              // borderWidth: 1,
-                            }}
-                            >
-                            Men
-                          </Text>
-                        </Pressable>
-
-                        <Pressable
-                          style={{
-                            fontSize: 12,
-                            height: "50%",
-                            width: "100%",
-                            color: "#38106A",
-
-                            // borderWidth: 1,
-                          }}>
-
-                          <Text
-                            style={{
-                              fontSize: 12,
-                              height: "100%",
-                              width: "100%",
-                              color: "#38106A",
-                              // borderWidth: 1,
-                            }}
-                          >
-                            Women
-                          </Text>
-                        </Pressable>
-
-
-                      </View>
-                      }
-                      </View>
-                      </View>
-
-                  </View>
-                  <View
-                    style={{
-                      flexDirection: "row",
-                      justifyContent: "flex-start",
-                      width: "30%",
-                      marginLeft: "10%",
-                      height: "80%",
-                      // borderWidth: 1,
-                      shadowOpacity: 0.25,
-                      shadowRadius: 3.84,
-                    }}
-                  >
-                    <View
-                      style={{
-                        width: "30%",
-                        height: "100%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        borderRightColor: "#38106A",
-                      }}
-                    >
-
-                      <Icon name="minuscircleo" size={20} type="antdesign" color="#38106A"
-                            onPress={() => {
-                              console.log(catagory.length);
-                              let newcatagory = catagory.map((cat, index) => {
-                                if (cat.selected) {
-                                  const newCloths = cat.cloths.map((cloth, index) => {
-                                    if (item.id === cloth.id) {
-                                      if (cloth.quantity > 0) {
-                                        cloth.quantity -= 1;
-                                      }
-                                      else {
-                                        cloth.quantity = 0;
-                                      }
-                                      return {
-                                        ...cloth,
-                                      };
-
-                                    } else {
-                                      return {
-                                        ...cloth,
-                                      };
-                                    }
-                                  });
-                                  return {
-                                    ...cat,
-                                    cloths: newCloths,
-                                  };
-                                } else {
-                                  return {
-                                    ...cat,
-                                  };
-
-                                }
-                              });
-
-                              setcatagory(newcatagory);
-                              calculateTotal(newcatagory);
-                            }}
-
-                      />
-
-                    </View>
-                    <View
-                      style={{
-                        width: "30%",
-                        height: "100%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Text
-                        style={{
-                          fontSize: 18,
-
-                        }}
-                      >
-                        {item.quantity}
-                      </Text>
-                    </View>
-
-                    <View
-                      style={{
-                        width: "30%",
-                        height: "100%",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Icon name="pluscircleo" type="antdesign" color="#38106A"
-                            onPress={() => {
-                              console.log(catagory.length);
-                              let newcatagory = catagory.map((cat, index) => {
-                                if (cat.selected) {
-                                  const newCloths = cat.cloths.map((cloth, index) => {
-                                    if (item.id === cloth.id) {
-                                      return {
-                                        ...cloth,
-                                        quantity: cloth.quantity + 1,
-                                      };
-                                    } else {
-                                      return {
-                                        ...cloth,
-                                      };
-                                    }
-                                  });
-                                   return {
-                                      ...cat,
-                                      cloths: newCloths,
-                                    };
-                                } else {
-                                  return {
-                                    ...cat,
-                                  };
-
-                                }
-                              });
-
-                              setcatagory(newcatagory);
-                              calculateTotal(newcatagory);
-                            }}
-                              />
-                    </View>
-
-
-                  </View>
-                </View>
+                />
               );
             })
           }
@@ -789,11 +588,13 @@ const HomeScreen = ({ navigation }) => {
                 bottom: 0,
                 borderTopLeftRadius: 20,
                 borderTopEndRadius: 20,
-                elevation: 3,
+                elevation: 2,
+                // backgroundColor: 'white'
+
               }}>
               <View
                 style={{
-                  marginTop: "5%",
+                  // marginTop: "5%",
                   width: "90%",
                   height: "45%",
                   borderRightColor: "#38106A",
@@ -820,7 +621,7 @@ const HomeScreen = ({ navigation }) => {
                       resizeMode: "contain",
                       marginHorizontal: 10,
                     }}
-                    />
+                  />
                 </View>
 
                 <View
@@ -835,7 +636,7 @@ const HomeScreen = ({ navigation }) => {
 
                   <Text
                     style={{
-                      fontSize: 10,
+                      fontSize: 12,
                       color: "#38106A",
                     }}
                   >
@@ -843,8 +644,8 @@ const HomeScreen = ({ navigation }) => {
                   </Text>
                   <Text
                     style={{
-                      fontSize: 12,
-                      fontWeight: "bold",
+                      fontSize: 16,
+                      fontWeight: "600",
                       color: "#38106A",
                     }}
                   >
@@ -875,8 +676,8 @@ const HomeScreen = ({ navigation }) => {
                   </Text>
                   <Text
                     style={{
-                      fontSize: 12,
-                      fontWeight: "bold",
+                      fontSize: 16,
+                      fontWeight: "600",
                       color: "#CE1567",
                     }}
                   >
@@ -888,7 +689,7 @@ const HomeScreen = ({ navigation }) => {
               <Pressable
                 style={{
                   width: "90%",
-                  height: "30%",
+                  padding: 10,
                   backgroundColor: "#CE1567",
                   justifyContent: "center",
                   alignItems: "center",
@@ -908,8 +709,8 @@ const HomeScreen = ({ navigation }) => {
               >
                 <Text
                   style={{
-                    fontSize: 12,
-                    fontWeight: "bold",
+                    fontSize: 16,
+                    fontWeight: "600",
                     color: "#F9F9F9",
                   }}
                 >
@@ -935,31 +736,31 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   catselected:
-{
-  backgroundColor:  "#CE1567",
-  padding: 2,
-  borderRadius: 5,
-  borderWidth: 1,
-  width: 80,
-  height: 30,
-  justifyContent: "center",
-  alignItems: "center",
-  marginHorizontal: 5,
-  borderColor: "#CE1567"
-},
+  {
+    backgroundColor: "#CE1567",
+    padding: 2,
+    borderRadius: 5,
+    borderWidth: 1,
+    width: 80,
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 5,
+    borderColor: "#CE1567"
+  },
   catunselected:
-    {
-      backgroundColor: "#fff",
-      padding: 2,
-      borderRadius: 5,
-      borderWidth: 1,
-      width: 80,
-      height: 30,
-      justifyContent: "center",
-      alignItems: "center",
-      marginHorizontal: 5,
-      borderColor:  "#38106A",
-    }
+  {
+    backgroundColor: "#fff",
+    padding: 2,
+    borderRadius: 5,
+    borderWidth: 1,
+    width: 80,
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 5,
+    borderColor: "#38106A",
+  }
 
 
 

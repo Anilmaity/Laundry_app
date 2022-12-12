@@ -2,8 +2,8 @@ import { Image, Text, View } from "react-native";
 import React, { useState } from "react";
 
 
-const Paymethod = ({ navigation, route }) => {
-
+const Paymethod = ({ navigation, paymethod }) => {
+  console.log(paymethod);
   return (
 
     <View
@@ -64,12 +64,13 @@ const Paymethod = ({ navigation, route }) => {
             width: "100%",
             fontSize: 12,
             fontWeight: "300",
-            textAlign: "right",
+            textAlign: "left",
             alignSelf: "center",
+            // borderWidth: 1,
             color: "grey",
             // borderWidth: 1,
             marginTop: 5,
-          }}>Visa/Master Card:**** **** **** 1234 </Text>
+          }}>{paymethod == "Card" ? "Visa/Master Card:**** **** **** 1234" :paymethod == "COD" ? "Cash On Delivery" : "Paypal" }</Text>
         </View>
       </View>
 

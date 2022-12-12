@@ -6,11 +6,12 @@ import Scheduledate from "./OrderDetailComponents/Scheduledate";
 import Paymethod from "./OrderDetailComponents/Paymethod";
 import Address from "./OrderDetailComponents/Address";
 const Orderdetail = ({ navigation, route }) => {
+  const paymethod = route.params.payment;
   const cat = route.params.category;
   const [order, setOrder] = useState([]);
   const [category, setcategory] = useState(cat);
   const total = route.params.total;
-  console.log(total, category.length);
+  console.log(total, category.length,paymethod);
 
   const anycloth = (cat) => {
     let qty = 0;
@@ -44,7 +45,7 @@ const Orderdetail = ({ navigation, route }) => {
         }
         >
           <Icon name="arrow-back" type="Ionicons" color="#000" onPress={() => {
-            console.log("back");
+            navigation.goBack();
           }} />
           <Text style={{
             fontSize: 20,
@@ -237,6 +238,7 @@ const Orderdetail = ({ navigation, route }) => {
                           if (cloth.quantity > 0) {
                             return (
                               <View
+                                key={i}
                                 style={{
                                   display: "flex",
                                   flexDirection: "row",
@@ -385,7 +387,7 @@ const Orderdetail = ({ navigation, route }) => {
         {/*// Schedule Time */}
         {/* Payment*/}
 
-         <Paymethod/>
+         <Paymethod paymethod = {paymethod}  />
         {/*  Address */}
 
         <Address/>
