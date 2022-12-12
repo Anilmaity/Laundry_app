@@ -344,7 +344,7 @@ const Orderdetail = ({ navigation, route }) => {
               color: "#38106A",
               // borderWidth: 1,
               marginTop: 5,
-            }}>${total * 0.18}</Text>
+            }}>${total * 0.2}</Text>
 
           </View>
 
@@ -376,7 +376,7 @@ const Orderdetail = ({ navigation, route }) => {
               color: "#CE1567",
               // borderWidth: 1,
               marginTop: 5,
-            }}>${total + total * 0.18}</Text>
+            }}>${total + total * 0.2}</Text>
 
           </View>
         </View>

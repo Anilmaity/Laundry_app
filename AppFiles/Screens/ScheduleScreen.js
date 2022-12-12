@@ -12,7 +12,7 @@ const ScheduleScreen = ({ navigation, route }) => {
     const total = route.params.total
     const totalqty = route.params.totalqty
     const category = route.params.category
-    const Tax = total * 0.18
+    const Tax = total * 0.2
     const [selectedpayment, setselectedpayment] = React.useState("Card");
 
     return (

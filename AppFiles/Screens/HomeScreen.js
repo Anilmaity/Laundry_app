@@ -681,7 +681,7 @@ const HomeScreen = ({ navigation }) => {
                       color: "#CE1567",
                     }}
                   >
-                    {total + " $"}
+                    {total + "$"}
                   </Text>
 
                 </View>
